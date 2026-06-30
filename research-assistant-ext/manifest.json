@@ -20,7 +20,7 @@
         "service_worker":"background.js"
     },
     "host_permissions": [
-        "https://ai-powered-research-assistant-1.onrender.com/*",
+        "https://ai-research-assistant-euie.onrender.com/*",
         "<all_urls>"
     ],
     "content_security_policy":{

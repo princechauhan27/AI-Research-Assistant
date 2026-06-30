@@ -20,7 +20,7 @@ async function summarizeText() {
       showResult("Please Select some text!")
       return;
     }
-    const response=await fetch('https://ai-powered-research-assistant-1.onrender.com/assistant/post',{
+    const response=await fetch('https://ai-research-assistant-euie.onrender.com/assistant/post',{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify({content:result, operation:'summarize'})
