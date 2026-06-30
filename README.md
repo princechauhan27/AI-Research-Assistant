@@ -1,6 +1,6 @@
 # 🚀 Research Assistant
 
-An **AI-powered Research Assistant** built with **Java** and **Spring Boot** that integrates with **Google Gemini AI** to generate research summaries and answer user queries.
+An **AI-powered Research Assistant** built with **Java** and **Spring Boot** that integrates with **Google Gemini AI** to generate research summaries and extract useful insights from selected data.
 
 The application exposes REST APIs that can be consumed by a Chrome Extension, web application, or any frontend client.
 
@@ -34,19 +34,22 @@ The application exposes REST APIs that can be consumed by a Chrome Extension, we
 ```text
 ai-research-assistant/
 │
-├── backend/
+├── research.assistant/
 │   ├── src/
 │   └── pom.xml
 │   └── ...
 │
-├── extension/
+├── research-assistant-ext/
 │   ├── manifest.json
-│   ├── popup.html
-│   ├── popup.js
+│   ├── sidepanel.html
+│   ├── sidepanel.js
+│   ├── sidepanel.css
 │   ├── background.js
-│   ├── content.js
-│   └── icons/
+│   └── download.png
 │   └── ...
+├── Screenshots/
+│   ├── Summarize.png
+│   ├── SaveNotes.png
 │
 ├── README.md
 └── .gitignore
@@ -81,7 +84,7 @@ Replace `YOUR_API_KEY` with your actual API key.
 Clone the repository
 
 ```bash
-git clone https://github.com/princechauhan27/research-assistant.git
+git clone https://github.com/princechauhan27/AI-Research-Assistant.git
 ```
 
 Navigate to the project directory
@@ -136,13 +139,20 @@ http://localhost:8080
 ```
 
 ---
+## 📸 Screenshots
 
+### Text Summarization
+![Summarization](Screenshots/Summarize.png)
+
+### SaveNotes
+![SaveNotes](Screenshots/SaveNotes.png)
+
+---
 ## 🚀 Future Improvements
 
 - Conversation history
 - Authentication and Authorization
 - Research citations and references
-- PDF export
 - Database integration
 - React frontend
 - Multiple AI model support
