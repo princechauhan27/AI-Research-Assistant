@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Research Assistant",
+    "description": "AI powered Reseach Assistant",
+    "version": "1.0",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "sidePanel",
+        "scripting"
+    ],
+    "action": {
+        "default_title":"Research Assistant",
+        "default_icon": "download.png"
+    },
+    "side_panel":{
+        "default_path":"sidepanel.html"
+    },
+    "background":{
+        "service_worker":"background.js"
+    },
+    "host_permissions": [
+        "https://ai-powered-research-assistant-1.onrender.com/*",
+        "<all_urls>"
+    ],
+    "content_security_policy":{
+        "extension_pages":"script-src 'self';object-src 'self'"
+    }
+}
